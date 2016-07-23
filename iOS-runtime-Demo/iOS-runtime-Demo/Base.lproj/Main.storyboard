@@ -314,16 +314,27 @@
                                 </constraints>
                                 <state key="normal" title="点  这  里"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-X0-Jti">
+                                <rect key="frame" x="20" y="190" width="280" height="358"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GDy-X0-Jti" firstAttribute="top" secondItem="Dqd-tY-ONG" secondAttribute="bottom" constant="49" id="HId-4I-mYr"/>
+                            <constraint firstItem="Muf-Bx-eD0" firstAttribute="top" secondItem="GDy-X0-Jti" secondAttribute="bottom" constant="20" id="SZu-V6-p8V"/>
+                            <constraint firstItem="GDy-X0-Jti" firstAttribute="leading" secondItem="nZV-4o-OPP" secondAttribute="leading" constant="20" id="VwP-DZ-GoH"/>
                             <constraint firstItem="Dqd-tY-ONG" firstAttribute="leading" secondItem="nZV-4o-OPP" secondAttribute="leading" constant="20" id="YeZ-rb-VG7"/>
                             <constraint firstItem="Dqd-tY-ONG" firstAttribute="top" secondItem="JM1-Gt-zRQ" secondAttribute="bottom" constant="91" id="vbj-Al-43M"/>
                             <constraint firstAttribute="trailing" secondItem="Dqd-tY-ONG" secondAttribute="trailing" constant="20" id="wfF-sl-Flg"/>
+                            <constraint firstAttribute="trailing" secondItem="GDy-X0-Jti" secondAttribute="trailing" constant="20" id="yIY-0x-gro"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="Dqd-tY-ONG" id="zaZ-f3-3Jg"/>
+                        <outlet property="textView" destination="GDy-X0-Jti" id="zI2-RY-d3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6p-Oq-h6E" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,8 +14,6 @@
 
 - (NSString *)toolMethod;
 
-- (void)addCount;
-
-- (NSInteger)count;
+@property (nonatomic, assign) NSInteger count;
 
 @end

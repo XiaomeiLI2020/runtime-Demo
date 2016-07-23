@@ -10,7 +10,6 @@
 
 @interface Tool ()
 
-@property (nonatomic, assign) NSInteger count;
 
 @end
 
@@ -21,21 +20,13 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         tool = [[Tool alloc] init];
+        tool.count = 0;
     });
     return tool;
 }
 
 - (NSString *)toolMethod {
     return @"tool Method";
-}
-
-- (void)addCount {
-    self.count += 1;
-    NSLog(@"点击次数 : %zd", self.count);
-}
-
-- (NSInteger)count {
-    return _count;
 }
 
 @end

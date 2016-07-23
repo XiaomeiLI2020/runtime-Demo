@@ -14,6 +14,7 @@
 @interface FifthViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -22,12 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.textView.editable = NO;
     
     [self.button addTarget:self action:@selector(buttonClickAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)buttonClickAction:(id)sender {
-    NSLog(@"tool count : %zd", [[Tool shareInstance] count]);
+    NSLog(@"tool count : %zd", [Tool shareInstance].count);
+    
+    self.textView.text = [NSString stringWithFormat:@"[Tool shareInstance].count=%zd\n\n\n这个方法里面并没有对[Tool shareInstance].count进行改动, 但是可以看到count的值一直在改变, 是因为在UIButton+Count这个文件中对方法进行了处理, 请查看UIButton+Count文件", [Tool shareInstance].count];
 }
 
 - (void)didReceiveMemoryWarning {

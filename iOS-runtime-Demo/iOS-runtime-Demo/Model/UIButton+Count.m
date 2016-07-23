@@ -36,7 +36,7 @@
 }
 
 - (void)totalSendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
-    [[Tool shareInstance] addCount];
+    [Tool shareInstance].count += 1;
     [self totalSendAction:action to:target forEvent:event];
 }
 
