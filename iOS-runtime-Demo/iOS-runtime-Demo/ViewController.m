@@ -38,7 +38,8 @@ static NSString *const reUse = @"reUse";
                        @"动态交换两个方法的实现",
                        @"拦截并替换方法",
                        @"在方法上增加额外功能",
-                       @"归档和解档 及 字典转模型"];
+                       @"归档和解档 及 字典转模型",
+                       @"动态为category添加属性"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

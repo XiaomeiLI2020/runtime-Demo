@@ -13,6 +13,7 @@
 @interface SixthViewController ()
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.textView.editable = NO;
 }
 
 // 字典转model
@@ -35,24 +37,41 @@
                          @"age": @(24)}];
     
     for (NSDictionary *dict in array) {
-        Person *person = [Person modelWithDict:dict];
+        Person *person = [Person modelWithDictionary:dict];
         NSLog(@"\n{name: %@, sex: %@, age: %zd}", person.name, person.sex, person.age);
         [self.dataArray addObject:person];
     }
     NSLog(@"dataArray : (%@)", self.dataArray);
+    
+    self.textView.text = @"由json转model: \n\
+                            Json 如下: \n\
+                            [ \n\
+                                { \n\
+                                    \"name\": \"leaon\", \n\
+                                    \"sex\": \"man\", \n\
+                                    \"age\": 23 \n\
+                                }, \n\
+                                { \n\
+                                    \"name\": \"liang\", \n\
+                                    \"sex\": \"nan\", \n\
+                                    \"age\": 24 \n\
+                                } \n\
+                            ] \n\
+                            转换成功";
 }
 
 // 归档
 - (IBAction)archiveAction:(id)sender {
     Person *person = [[Person alloc] init];
-    person.name = @"iOS";
-    person.sex = @"I don't know";
+    person.name = @"Leo";
+    person.sex = @"男";
     person.age = 24;
     
     // model写入文件
     BOOL result = [NSKeyedArchiver archiveRootObject:person toFile:filePath()];
     if (result) {
         NSLog(@"写入成功");
+        self.textView.text = @"归档成功, 数据如下: \nperson.name = \"Leo\"\nperson.sex = \"男\"\nperson.age = 24";
     }
 }
 
@@ -60,6 +79,12 @@
 - (IBAction)unarchiveAction:(id)sender {
     Person *person = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath()];
     NSLog(@"\n{name: %@, sex: %@, age: %zd}", person.name, person.sex, person.age);
+    
+    if (person) {
+        self.textView.text = [NSString stringWithFormat:@"解档成功\nPerson: \n{name: %@, sex: %@, age: %zd}", person.name, person.sex, person.age];
+    } else {
+        self.textView.text = @"本地没有数据, 请先归档存入数据";
+    }
 }
 
 NSString *filePath() {

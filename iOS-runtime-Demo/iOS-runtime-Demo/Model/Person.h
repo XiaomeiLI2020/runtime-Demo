@@ -7,17 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+DicToModel.h"
-#import "NSObject+Archive.h"
+#import "NSObject+Json.h"
+#import "RuntimeDefine.h"
 
-@interface Person : NSObject <DicToModelDelegate, NSCoding>
+@interface Person : NSObject <JsonDelegate, NSCoding>
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *sex;
 @property (nonatomic, assign) int age;
 
 - (NSString *)personMethod;
+
 - (NSString *)helloiOS;
+
 - (NSString *)helloPython;
 
 @end

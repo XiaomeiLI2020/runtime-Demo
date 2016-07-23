@@ -29,10 +29,6 @@
     return @"tool Method";
 }
 
-- (NSString *)changeMethod {
-    return @"Haha, 方法被替换掉了";
-}
-
 - (void)addCount {
     self.count += 1;
     NSLog(@"点击次数 : %zd", self.count);

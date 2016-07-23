@@ -1,17 +1,17 @@
 //
-//  NSObject+DicToModel.m
+//  NSObject+Json.m
 //  iOS-runtime-Demo
 //
-//  Created by 雷亮 on 16/7/21.
+//  Created by 雷亮 on 16/7/23.
 //  Copyright © 2016年 Leiliang. All rights reserved.
 //
 
-#import "NSObject+DicToModel.h"
+#import "NSObject+Json.h"
 #import <objc/message.h>
 
-@implementation NSObject (DicToModel)
+@implementation NSObject (Json)
 
-+ (instancetype)modelWithDict:(NSDictionary *)dict {
++ (instancetype)modelWithDictionary:(NSDictionary *)dictionary {
     /// 创建对应模型对象
     id objc = [[self alloc] init];
     unsigned int count = 0;
@@ -26,7 +26,7 @@
         // 2.3 _成员属性名 => 字典key（去掉下划线_）
         NSString *key = [ivarName substringFromIndex:1];
         // 2.4 去字典中取出对应value给模型属性赋值
-        id value = dict[key];
+        id value = dictionary[key];
         // 获取成员属性类型
         NSString *ivarType = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
         
@@ -43,7 +43,7 @@
             // 字典转模型
             if (modelClass) {
                 // 字典转模型 user
-                value = [modelClass modelWithDict:value];
+                value = [modelClass modelWithDictionary:value];
             }
         }
         
@@ -61,7 +61,7 @@
                 NSMutableArray *array = [NSMutableArray array];
                 // 遍历字典数组, 生成模型数组
                 for (NSDictionary *dict in value) {
-                    id model = [classModel modelWithDict:dict];
+                    id model = [classModel modelWithDictionary:dict];
                     [array addObject:model];
                 }
                 // 把模型数组赋值给value

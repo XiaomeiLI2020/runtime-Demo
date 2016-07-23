@@ -14,8 +14,6 @@
 
 - (NSString *)toolMethod;
 
-- (NSString *)changeMethod;
-
 - (void)addCount;
 
 - (NSInteger)count;

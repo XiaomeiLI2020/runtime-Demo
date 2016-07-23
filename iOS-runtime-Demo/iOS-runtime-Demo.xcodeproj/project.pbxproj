@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD4343C21D430DF100048539 /* SeventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4343C11D430DF100048539 /* SeventhViewController.m */; };
+		DD4343C51D430ED600048539 /* Person+family.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4343C41D430ED600048539 /* Person+family.m */; };
+		DD4343C91D43116500048539 /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4343C81D43116500048539 /* NSObject+Json.m */; };
 		DD4ADA2D1D40B4F7005DA73B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA2C1D40B4F7005DA73B /* main.m */; };
 		DD4ADA301D40B4F7005DA73B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA2F1D40B4F7005DA73B /* AppDelegate.m */; };
 		DD4ADA331D40B4F7005DA73B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA321D40B4F7005DA73B /* ViewController.m */; };
@@ -19,14 +22,19 @@
 		DD4ADA4E1D40B727005DA73B /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA4D1D40B727005DA73B /* FourthViewController.m */; };
 		DD4ADA511D40B733005DA73B /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA501D40B733005DA73B /* FifthViewController.m */; };
 		DD4ADA541D40B799005DA73B /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA531D40B799005DA73B /* SixthViewController.m */; };
-		DD4ADA5B1D40BA5C005DA73B /* NSObject+DicToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA5A1D40BA5C005DA73B /* NSObject+DicToModel.m */; };
 		DD4ADA611D40C0DF005DA73B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA601D40C0DF005DA73B /* Person.m */; };
 		DD4ADA641D40C18C005DA73B /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA631D40C18C005DA73B /* Tool.m */; };
 		DD4ADA671D40D614005DA73B /* UIButton+Count.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA661D40D614005DA73B /* UIButton+Count.m */; };
-		DD4ADA6D1D40DED3005DA73B /* NSObject+Archive.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ADA6C1D40DED3005DA73B /* NSObject+Archive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD4343C01D430DF100048539 /* SeventhViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeventhViewController.h; sourceTree = "<group>"; };
+		DD4343C11D430DF100048539 /* SeventhViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeventhViewController.m; sourceTree = "<group>"; };
+		DD4343C31D430ED600048539 /* Person+family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+family.h"; sourceTree = "<group>"; };
+		DD4343C41D430ED600048539 /* Person+family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+family.m"; sourceTree = "<group>"; };
+		DD4343C61D430F3100048539 /* RuntimeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDefine.h; sourceTree = "<group>"; };
+		DD4343C71D43116500048539 /* NSObject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
+		DD4343C81D43116500048539 /* NSObject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		DD4ADA281D40B4F7005DA73B /* iOS-runtime-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-runtime-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4ADA2C1D40B4F7005DA73B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD4ADA2E1D40B4F7005DA73B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,16 +57,12 @@
 		DD4ADA501D40B733005DA73B /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		DD4ADA521D40B799005DA73B /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
 		DD4ADA531D40B799005DA73B /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
-		DD4ADA591D40BA5C005DA73B /* NSObject+DicToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DicToModel.h"; sourceTree = "<group>"; };
-		DD4ADA5A1D40BA5C005DA73B /* NSObject+DicToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DicToModel.m"; sourceTree = "<group>"; };
 		DD4ADA5F1D40C0DF005DA73B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		DD4ADA601D40C0DF005DA73B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DD4ADA621D40C18C005DA73B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		DD4ADA631D40C18C005DA73B /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		DD4ADA651D40D614005DA73B /* UIButton+Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Count.h"; sourceTree = "<group>"; };
 		DD4ADA661D40D614005DA73B /* UIButton+Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Count.m"; sourceTree = "<group>"; };
-		DD4ADA6B1D40DED3005DA73B /* NSObject+Archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archive.h"; sourceTree = "<group>"; };
-		DD4ADA6C1D40DED3005DA73B /* NSObject+Archive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archive.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				DD4ADA501D40B733005DA73B /* FifthViewController.m */,
 				DD4ADA521D40B799005DA73B /* SixthViewController.h */,
 				DD4ADA531D40B799005DA73B /* SixthViewController.m */,
+				DD4343C01D430DF100048539 /* SeventhViewController.h */,
+				DD4343C11D430DF100048539 /* SeventhViewController.m */,
 			);
 			path = DemoViewControllers;
 			sourceTree = "<group>";
@@ -136,16 +142,17 @@
 		DD4ADA581D40BA05005DA73B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD4ADA591D40BA5C005DA73B /* NSObject+DicToModel.h */,
-				DD4ADA5A1D40BA5C005DA73B /* NSObject+DicToModel.m */,
+				DD4343C61D430F3100048539 /* RuntimeDefine.h */,
+				DD4343C71D43116500048539 /* NSObject+Json.h */,
+				DD4343C81D43116500048539 /* NSObject+Json.m */,
 				DD4ADA5F1D40C0DF005DA73B /* Person.h */,
 				DD4ADA601D40C0DF005DA73B /* Person.m */,
 				DD4ADA621D40C18C005DA73B /* Tool.h */,
 				DD4ADA631D40C18C005DA73B /* Tool.m */,
 				DD4ADA651D40D614005DA73B /* UIButton+Count.h */,
 				DD4ADA661D40D614005DA73B /* UIButton+Count.m */,
-				DD4ADA6B1D40DED3005DA73B /* NSObject+Archive.h */,
-				DD4ADA6C1D40DED3005DA73B /* NSObject+Archive.m */,
+				DD4343C31D430ED600048539 /* Person+family.h */,
+				DD4343C41D430ED600048539 /* Person+family.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,13 +233,14 @@
 				DD4ADA331D40B4F7005DA73B /* ViewController.m in Sources */,
 				DD4ADA4B1D40B71D005DA73B /* ThirdViewController.m in Sources */,
 				DD4ADA301D40B4F7005DA73B /* AppDelegate.m in Sources */,
-				DD4ADA5B1D40BA5C005DA73B /* NSObject+DicToModel.m in Sources */,
+				DD4343C91D43116500048539 /* NSObject+Json.m in Sources */,
 				DD4ADA611D40C0DF005DA73B /* Person.m in Sources */,
 				DD4ADA541D40B799005DA73B /* SixthViewController.m in Sources */,
 				DD4ADA2D1D40B4F7005DA73B /* main.m in Sources */,
 				DD4ADA4E1D40B727005DA73B /* FourthViewController.m in Sources */,
 				DD4ADA451D40B6E9005DA73B /* FirstViewController.m in Sources */,
-				DD4ADA6D1D40DED3005DA73B /* NSObject+Archive.m in Sources */,
+				DD4343C21D430DF100048539 /* SeventhViewController.m in Sources */,
+				DD4343C51D430ED600048539 /* Person+family.m in Sources */,
 				DD4ADA671D40D614005DA73B /* UIButton+Count.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +390,7 @@
 				DD4ADA411D40B4F7005DA73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
